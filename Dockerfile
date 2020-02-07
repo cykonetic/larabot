@@ -1,7 +1,7 @@
 FROM bitnami/laravel:6-debian-9
 
 RUN sudo apt-get update &&\
-    sudo apt-get install -y git autoconf build-essential pkg-config &&\
+    sudo apt-get install -y git autoconf build-essential pkg-config unzip &&\
     sudo pecl channel-update pecl.php.net &&\
     sudo pecl install xdebug
 
